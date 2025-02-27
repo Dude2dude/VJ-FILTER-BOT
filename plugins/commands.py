@@ -354,7 +354,7 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
                 ]]
-                 reply_markup = InlineKeyboardMarkup(button)
+                reply_markup = InlineKeyboardMarkup(button)
                 try:
                     p = await msg.copy(message.chat.id, caption=f_caption, protect_content=True if protect == "/pbatch" else False, reply_markup=reply_markup)
                 except FloodWait as e:
@@ -625,7 +625,7 @@ async def start(client, message):
                 ],[
                     InlineKeyboardButton('ᴊᴏɪɴ ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
                 ]]
-        reply_markup = InlineKeyboardMarkup(button)
+                reply_markup = InlineKeyboardMarkup(button)
     msg = await client.send_cached_media(
         chat_id=message.from_user.id,
         file_id=file_id,
